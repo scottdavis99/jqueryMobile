@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="js/lib/jqueryMobile/jquery.mobile-1.1.1.css" />
+        <script data-main="js/app" src="js/lib/require.js"></script>
+    </head>
+    <body>
+		<div data-role="page" id="home">
+			<div data-role="header">
+		        <h1>Hello Header</h1>
+			</div>			
+			<div data-role="content">
+		        <p>Hello Content</p>		
+		        <p>There's more exciting info on <a href="#page2">Page 2</a></p>				
+		        <p>Visit <a href="http://pixeltarget.com">PixelTarget</a>.</p>				
+		        <p>Visit (external) <a href="page3.html">Page 3</a>.</p>				
+		        <p>Visit (prefetched) <a href="page4.html" data-prefetch>Page 4</a>.</p>				
+		        <p><a href="#transitions">Transitions</a>.</p>				
+		        <p><a href="#buttons">Buttons</a>.</p>				
+
+			</div>
+			<div data-role="footer">
+		        <h4>Hello Footer</h4>
+			</div>			
+		</div>
+
+
+		<div data-role="page" 
+		     id="page2"
+			 data-add-back-btn="true"
+  			 data-back-btn-text="Home">
+			
+			<div data-role="header">
+		        <h1>Hello Header</h1>
+			</div>			
+			
+			<div data-role="content">
+		        <p>Welcome to Page 2!</p>
+			</div>
+
+			<div data-role="footer">
+		        <h4>Hello Footer</h4>
+			</div>			
+		</div>
+		
+		
+		
+		
+		<div data-role="page" 
+		     id="transitions"
+			 data-add-back-btn="true">
+			
+			<div data-role="header"><h1>Transitions</h1></div>			
+			
+			<div data-role="content">
+		        <p>Transitions Tester</p>
+		        <p><a href="#dest" data-transition="fade">fade</a></p>
+		        <p><a href="#dest" data-transition="flip">flip</a></p>
+		        <p><a href="#dest" data-transition="flow">flow</a></p>
+		        <p><a href="#dest" data-transition="pop">pop</a></p>
+		        <p><a href="#dest" data-transition="slide">slide</a></p>
+		        <p><a href="#dest" data-transition="slidedown">slidedown</a></p>
+		        <p><a href="#dest" data-transition="slidefade">slidefade</a></p>
+		        <p><a href="#dest" data-transition="slideup">slideup</a></p>
+		        <p><a href="#dest" data-transition="turn">turn</a></p>
+		        <p><a href="#dest" data-transition="none">none</a></p>
+			</div>
+		</div>
+		
+		
+		<div data-role="page" 
+		     id="dest"
+			 data-add-back-btn="true">
+			
+			<div data-role="header"><h1>Destination</h1></div>			
+			
+			<div data-role="content">
+		        <p>Destination</p>
+			</div>
+		</div>
+		
+		
+
+
+		<div data-role="page" 
+		     id="buttons"
+			 data-add-back-btn="true">
+			
+			<div data-role="header">
+				<h1>Buttons</h1>
+				<a href="#settings" data-icon="gear" class="ui-btn-right">Settings</a>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#dest">List</a></li>
+						<li><a href="#dest">New</a></li>
+						<li><a href="#dest">Delete</a></li>
+					</ul>	
+				</div>
+			</div>			
+			
+			
+			<div data-role="content">
+		        <p>Buttons</p>
+			</div>
+		</div>
+
+		<div data-role="page" 
+		     id="settings"
+			 data-add-back-btn="true">
+			
+			<div data-role="header"><h1>Settings</h1></div>			
+			
+			<div data-role="content">
+		        <p>Settings</p>
+			</div>
+		</div>
+		
+		
+		
+    </body>
+</html>
